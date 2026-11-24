@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 3.4 — Plan Mode vs Execucao Direta | CCA-Q1</title>
+  <title>Modulo 3.4 â€” Plan Mode vs Execucao Direta | CCA-Q1</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -65,9 +65,9 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-14">
         <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">🏗️</span><span class="font-bold text-lg hidden sm:inline">CCA-Q1</span></a>
+          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">ðŸ—ï¸</span><span class="font-bold text-lg hidden sm:inline">CCA-Q1</span></a>
           <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+          <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
         </div>
         <div class="flex items-center space-x-1 sm:space-x-2">
           <a href="../trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Arquitetura</span></a>
@@ -95,7 +95,7 @@
   <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="inline-block px-4 py-1.5 bg-purple-500/20 text-purple-400 text-sm font-semibold rounded-full mb-4">MODULO 3.4</span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🧭 Plan Mode vs Execucao Direta</h1>
+      <h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§­ Plan Mode vs Execucao Direta</h1>
       <p class="text-neutral-300 text-lg max-w-3xl mb-8">Saiba quando planejar antes de executar, quando ir direto ao ponto, e como o subagente Explore ajuda a mapear codebases desconhecidas.</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
         <div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600 text-center"><div class="text-2xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Topicos</div></div>
@@ -112,13 +112,13 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span>
-        <h2 class="text-2xl font-bold">📋 Quando Usar Plan Mode</h2>
+        <h2 class="text-2xl font-bold">ðŸ“‹ Quando Usar Plan Mode</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">Plan mode e ideal para tarefas de grande escala onde erros sao caros e dificeis de reverter. Em vez de Claude comecar a editar imediatamente, ele primeiro analisa a codebase, identifica todos os arquivos que serao afetados, propoe uma estrategia passo a passo e espera sua aprovacao.</p>
         <p class="text-neutral-300 leading-relaxed">Use plan mode para: refatoracoes que tocam muitos arquivos, migracoes de tecnologia, implementacao de features grandes, mudancas arquiteturais, e qualquer tarefa onde voce quer revisar a abordagem antes da execucao. O custo extra de tokens para o planejamento e amplamente compensado pela reducao de erros e retrabalho.</p>
         <div class="bg-purple-500/10 rounded-xl border border-purple-500/30 p-6">
-          <h3 class="text-lg font-semibold text-purple-400 mb-3 flex items-center"><span class="mr-2">💡</span> Regra de Ouro</h3>
+          <h3 class="text-lg font-semibold text-purple-400 mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Regra de Ouro</h3>
           <p class="text-neutral-300 leading-relaxed">Se a tarefa toca <strong class="text-purple-400">mais de 3 arquivos</strong> ou envolve <strong class="text-purple-400">decisoes arquiteturais</strong>, use plan mode. O overhead de planejamento e minimo comparado ao custo de desfazer mudancas erradas em 10+ arquivos.</p>
         </div>
       </div>
@@ -128,28 +128,28 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
-        <h2 class="text-2xl font-bold">⚡ Quando Usar Execucao Direta</h2>
+        <h2 class="text-2xl font-bold">âš¡ Quando Usar Execucao Direta</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">Execucao direta e o modo padrao e mais eficiente para tarefas simples, bem definidas e de escopo limitado. Claude analisa o pedido e comeca a executar imediatamente, usando ferramentas conforme necessario. Nao ha overhead de planejamento.</p>
         <p class="text-neutral-300 leading-relaxed">Use execucao direta para: corrigir um bug especifico, adicionar uma funcao a um arquivo existente, ajustar estilos CSS, escrever um teste para uma funcao, ou qualquer tarefa onde o escopo e claro e o risco e baixo. Forcar plan mode para tarefas simples e desperdicio de tokens e tempo.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="bg-purple-500/10 rounded-xl border border-purple-500/30 p-6">
-            <h4 class="font-semibold text-purple-400 mb-4">📋 Plan Mode</h4>
+            <h4 class="font-semibold text-purple-400 mb-4">ðŸ“‹ Plan Mode</h4>
             <ul class="space-y-2 text-neutral-300 text-sm">
-              <li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">•</span><span>Refatoracoes multi-arquivo</span></li>
-              <li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">•</span><span>Migracoes de tecnologia</span></li>
-              <li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">•</span><span>Features grandes e complexas</span></li>
-              <li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">•</span><span>Decisoes arquiteturais</span></li>
+              <li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">â€¢</span><span>Refatoracoes multi-arquivo</span></li>
+              <li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">â€¢</span><span>Migracoes de tecnologia</span></li>
+              <li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">â€¢</span><span>Features grandes e complexas</span></li>
+              <li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">â€¢</span><span>Decisoes arquiteturais</span></li>
             </ul>
           </div>
           <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-            <h4 class="font-semibold text-neutral-300 mb-4">⚡ Execucao Direta</h4>
+            <h4 class="font-semibold text-neutral-300 mb-4">âš¡ Execucao Direta</h4>
             <ul class="space-y-2 text-neutral-300 text-sm">
-              <li class="flex items-start space-x-2"><span class="text-neutral-500 mt-0.5">•</span><span>Bug fixes pontuais</span></li>
-              <li class="flex items-start space-x-2"><span class="text-neutral-500 mt-0.5">•</span><span>Adicionar funcao/componente</span></li>
-              <li class="flex items-start space-x-2"><span class="text-neutral-500 mt-0.5">•</span><span>Ajustes de estilo/config</span></li>
-              <li class="flex items-start space-x-2"><span class="text-neutral-500 mt-0.5">•</span><span>Escrever testes</span></li>
+              <li class="flex items-start space-x-2"><span class="text-neutral-500 mt-0.5">â€¢</span><span>Bug fixes pontuais</span></li>
+              <li class="flex items-start space-x-2"><span class="text-neutral-500 mt-0.5">â€¢</span><span>Adicionar funcao/componente</span></li>
+              <li class="flex items-start space-x-2"><span class="text-neutral-500 mt-0.5">â€¢</span><span>Ajustes de estilo/config</span></li>
+              <li class="flex items-start space-x-2"><span class="text-neutral-500 mt-0.5">â€¢</span><span>Escrever testes</span></li>
             </ul>
           </div>
         </div>
@@ -160,18 +160,18 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
-        <h2 class="text-2xl font-bold">🔭 Subagente Explore</h2>
+        <h2 class="text-2xl font-bold">ðŸ”­ Subagente Explore</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">O subagente Explore e um recurso que permite a Claude navegar pela codebase de forma verbosa em um contexto isolado. Ele le arquivos, analisa estruturas, segue dependencias e retorna um resumo compacto ao contexto principal. E como enviar um explorador antes de montar o acampamento.</p>
         <p class="text-neutral-300 leading-relaxed">Explore e particularmente valioso quando Claude precisa entender uma codebase desconhecida antes de fazer mudancas. Em vez de ler dezenas de arquivos na conversa principal (poluindo o contexto), Explore faz essa leitura em uma sessao isolada e retorna apenas as informacoes relevantes.</p>
         <div class="bg-amber-500/10 rounded-xl border border-amber-500/30 p-6">
-          <h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">🎯</span> Explore vs Leitura Direta</h3>
+          <h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">ðŸŽ¯</span> Explore vs Leitura Direta</h3>
           <ul class="space-y-2 text-neutral-300 text-sm">
-            <li class="flex items-start space-x-2"><span class="text-amber-400 mt-0.5">•</span><span><strong class="text-amber-400">Use Explore</strong> quando precisa entender a estrutura antes de modificar</span></li>
-            <li class="flex items-start space-x-2"><span class="text-amber-400 mt-0.5">•</span><span><strong class="text-amber-400">Use leitura direta</strong> quando ja sabe quais arquivos precisa</span></li>
-            <li class="flex items-start space-x-2"><span class="text-amber-400 mt-0.5">•</span><span>Explore retorna resumo compacto — leitura direta retorna conteudo completo</span></li>
-            <li class="flex items-start space-x-2"><span class="text-amber-400 mt-0.5">•</span><span>Explore e isolado — nao polui o contexto principal</span></li>
+            <li class="flex items-start space-x-2"><span class="text-amber-400 mt-0.5">â€¢</span><span><strong class="text-amber-400">Use Explore</strong> quando precisa entender a estrutura antes de modificar</span></li>
+            <li class="flex items-start space-x-2"><span class="text-amber-400 mt-0.5">â€¢</span><span><strong class="text-amber-400">Use leitura direta</strong> quando ja sabe quais arquivos precisa</span></li>
+            <li class="flex items-start space-x-2"><span class="text-amber-400 mt-0.5">â€¢</span><span>Explore retorna resumo compacto â€” leitura direta retorna conteudo completo</span></li>
+            <li class="flex items-start space-x-2"><span class="text-amber-400 mt-0.5">â€¢</span><span>Explore e isolado â€” nao polui o contexto principal</span></li>
           </ul>
         </div>
       </div>
@@ -181,19 +181,19 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
-        <h2 class="text-2xl font-bold">📊 Tarefas Complexas vs Simples</h2>
+        <h2 class="text-2xl font-bold">ðŸ“Š Tarefas Complexas vs Simples</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">A capacidade de avaliar a complexidade de uma tarefa e uma habilidade fundamental. Criterios de complexidade incluem: numero de arquivos afetados, existencia de dependencias entre mudancas, ambiguidade dos requisitos, impacto potencial de erros e reversibilidade das mudancas.</p>
         <p class="text-neutral-300 leading-relaxed">Tarefas aparentemente simples podem ser complexas: "adicionar autenticacao" parece simples mas toca rotas, middleware, modelos, testes e configuracao. Inversamente, tarefas grandes podem ser simples: "renomear variavel X para Y em todo o projeto" e repetitiva mas de baixo risco.</p>
         <div class="bg-blue-500/10 rounded-xl border border-blue-500/30 p-6">
-          <h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">📊</span> Criterios de Complexidade</h3>
+          <h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ“Š</span> Criterios de Complexidade</h3>
           <ul class="space-y-2 text-neutral-300 text-sm">
-            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span><strong>Escopo:</strong> Quantos arquivos sao afetados?</span></li>
-            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span><strong>Dependencias:</strong> Mudancas em um arquivo exigem mudancas em outros?</span></li>
-            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span><strong>Ambiguidade:</strong> Os requisitos sao claros ou abertos a interpretacao?</span></li>
-            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span><strong>Risco:</strong> Qual o impacto de um erro? E facil reverter?</span></li>
-            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span><strong>Arquitetura:</strong> A tarefa envolve decisoes de design de longo prazo?</span></li>
+            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>Escopo:</strong> Quantos arquivos sao afetados?</span></li>
+            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>Dependencias:</strong> Mudancas em um arquivo exigem mudancas em outros?</span></li>
+            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>Ambiguidade:</strong> Os requisitos sao claros ou abertos a interpretacao?</span></li>
+            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>Risco:</strong> Qual o impacto de um erro? E facil reverter?</span></li>
+            <li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>Arquitetura:</strong> A tarefa envolve decisoes de design de longo prazo?</span></li>
           </ul>
         </div>
       </div>
@@ -203,13 +203,13 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
-        <h2 class="text-2xl font-bold">🔄 Combinar Plan + Execucao</h2>
+        <h2 class="text-2xl font-bold">ðŸ”„ Combinar Plan + Execucao</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">O workflow mais produtivo combina ambos os modos: comece com plan mode para entender o escopo total e definir a estrategia, depois execute cada etapa do plano em modo direto. Voce pode alternar entre modos livremente dentro da mesma sessao.</p>
         <p class="text-neutral-300 leading-relaxed">Na pratica: peca a Claude para planejar a refatoracao (plan mode), revise e aprove a estrategia, depois peca para executar etapa por etapa (execucao direta para cada etapa). Isso da controle sobre a visao global sem sacrificar a agilidade na execucao individual.</p>
         <div class="bg-purple-500/10 rounded-xl border border-purple-500/30 p-6">
-          <h3 class="text-lg font-semibold text-purple-400 mb-3 flex items-center"><span class="mr-2">💡</span> Workflow Hibrido</h3>
+          <h3 class="text-lg font-semibold text-purple-400 mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Workflow Hibrido</h3>
           <div class="space-y-3">
             <div class="flex items-start space-x-3">
               <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">1</span>
@@ -236,13 +236,13 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
-        <h2 class="text-2xl font-bold">🏛️ Decisoes de Arquitetura</h2>
+        <h2 class="text-2xl font-bold">ðŸ›ï¸ Decisoes de Arquitetura</h2>
       </div>
       <div class="space-y-6">
-        <p class="text-neutral-300 leading-relaxed">Decisoes de arquitetura — como estruturar modulos, definir interfaces entre servicos, escolher padroes de dados, selecionar estrategias de cache — devem SEMPRE passar por plan mode. Essas decisoes tem impacto de longo prazo, sao dificeis de reverter e afetam muitos componentes do sistema.</p>
+        <p class="text-neutral-300 leading-relaxed">Decisoes de arquitetura â€” como estruturar modulos, definir interfaces entre servicos, escolher padroes de dados, selecionar estrategias de cache â€” devem SEMPRE passar por plan mode. Essas decisoes tem impacto de longo prazo, sao dificeis de reverter e afetam muitos componentes do sistema.</p>
         <p class="text-neutral-300 leading-relaxed">Plan mode permite discutir trade-offs antes de commitar com uma abordagem. Claude pode apresentar alternativas, listar pros e contras de cada uma, e voce pode questionar, refinar e ajustar antes que uma unica linha de codigo seja escrita. E infinitamente mais barato mudar um plano do que refatorar uma implementacao.</p>
         <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-6">
-          <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">🚨</span> Anti-padrao: Arquitetura em Execucao Direta</h3>
+          <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">ðŸš¨</span> Anti-padrao: Arquitetura em Execucao Direta</h3>
           <p class="text-neutral-300 leading-relaxed">Pedir a Claude para "implementar autenticacao" em execucao direta significa que Claude toma decisoes arquiteturais (JWT vs sessions, where to store tokens, middleware structure) sem sua revisao. Se a abordagem escolhida nao for a ideal, voce descobre tarde demais.</p>
         </div>
       </div>
@@ -250,27 +250,27 @@
 
     <!-- RESUMO FINAL -->
     <section class="bg-dark-800 rounded-xl border border-dark-600 p-8">
-      <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📋</span> Resumo Final</h2>
+      <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ“‹</span> Resumo Final</h2>
       <div class="space-y-3 mb-8">
-        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">✓</span><span class="text-neutral-300">Plan mode para tarefas complexas, multi-arquivo e com decisoes arquiteturais</span></div>
-        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">✓</span><span class="text-neutral-300">Execucao direta para tarefas simples, bem definidas e de escopo limitado</span></div>
-        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">✓</span><span class="text-neutral-300">Subagente Explore para mapear codebases em contexto isolado</span></div>
-        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">✓</span><span class="text-neutral-300">Avaliar complexidade por escopo, dependencias, ambiguidade e risco</span></div>
-        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">✓</span><span class="text-neutral-300">Combinar plan + execucao para o melhor de ambos os mundos</span></div>
-        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">✓</span><span class="text-neutral-300">Decisoes de arquitetura devem SEMPRE passar por plan mode</span></div>
+        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Plan mode para tarefas complexas, multi-arquivo e com decisoes arquiteturais</span></div>
+        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Execucao direta para tarefas simples, bem definidas e de escopo limitado</span></div>
+        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Subagente Explore para mapear codebases em contexto isolado</span></div>
+        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Avaliar complexidade por escopo, dependencias, ambiguidade e risco</span></div>
+        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Combinar plan + execucao para o melhor de ambos os mundos</span></div>
+        <div class="flex items-start space-x-3"><span class="text-purple-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Decisoes de arquitetura devem SEMPRE passar por plan mode</span></div>
       </div>
       <div class="bg-purple-500/10 rounded-lg border border-purple-500/30 p-4 mb-6">
-        <p class="text-neutral-300 text-sm"><strong class="text-purple-400">Proximo modulo:</strong> 3.5 — Tecnicas de Refinamento Iterativo</p>
+        <p class="text-neutral-300 text-sm"><strong class="text-purple-400">Proximo modulo:</strong> 3.5 â€” Tecnicas de Refinamento Iterativo</p>
       </div>
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-3-3.html" class="flex-1 text-center px-6 py-3 rounded-lg border border-dark-600 text-neutral-300 hover:text-purple-400 hover:border-purple-500/30 transition-colors font-medium">← Modulo Anterior</a>
-        <a href="modulo-3-5.html" class="flex-1 text-center px-6 py-3 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/10 transition-colors font-medium">Proximo Modulo →</a>
+        <a href="modulo-3-3.html" class="flex-1 text-center px-6 py-3 rounded-lg border border-dark-600 text-neutral-300 hover:text-purple-400 hover:border-purple-500/30 transition-colors font-medium">â† Modulo Anterior</a>
+        <a href="modulo-3-5.html" class="flex-1 text-center px-6 py-3 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/10 transition-colors font-medium">Proximo Modulo â†’</a>
       </div>
     </section>
   </main>
 
   <footer class="border-t border-dark-600 py-8 mt-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>CCA-Q1 — Claude Certified Architect - 2026</p></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>CCA-Q1 â€” Claude Certified Architect - 2026</p></div>
   </footer>
 
   <script>

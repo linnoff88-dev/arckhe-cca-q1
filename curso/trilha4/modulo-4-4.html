@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 4.4 — Validacao, Retry e Feedback Loops | CCA-Q1</title>
+  <title>Modulo 4.4 â€” Validacao, Retry e Feedback Loops | CCA-Q1</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -58,9 +58,9 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-14">
         <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">🏗️</span><span class="font-bold text-lg hidden sm:inline">CCA-Q1</span></a>
+          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">ðŸ—ï¸</span><span class="font-bold text-lg hidden sm:inline">CCA-Q1</span></a>
           <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+          <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
         </div>
         <div class="flex items-center space-x-1 sm:space-x-2">
           <a href="../trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Arquitetura</span></a>
@@ -88,7 +88,7 @@
   <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="inline-block px-4 py-1.5 bg-amber-500/20 text-amber-400 text-sm font-semibold rounded-full mb-4">MODULO 4.4</span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🔄 Validacao, Retry e Feedback Loops</h1>
+      <h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ”„ Validacao, Retry e Feedback Loops</h1>
       <p class="text-neutral-300 text-lg max-w-3xl mb-8">Implemente loops de correcao eficazes. Feedback especifico, limites de retry, diagnostico com detected_pattern e quando parar de tentar.</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
         <div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600 text-center"><div class="text-2xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">Topicos</div></div>
@@ -105,7 +105,7 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
-        <h2 class="text-2xl font-bold">🎯 Retry com Feedback de Erro Especifico</h2>
+        <h2 class="text-2xl font-bold">ðŸŽ¯ Retry com Feedback de Erro Especifico</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">A diferenca entre um retry que funciona e um que desperdicam tokens esta na especificidade do feedback. Um retry generico ("tente novamente") nao da informacao nova para Claude corrigir o erro. Ja um retry com feedback especifico ("o campo revenue retornou 0, mas o documento mostra 'Total Revenue: $4.2M' na pagina 3") aponta exatamente o que esta errado e onde esta a resposta correta.</p>
@@ -113,7 +113,7 @@
         <p class="text-neutral-300 leading-relaxed">O padrao eficaz de retry inclui tres componentes: (1) qual campo/valor esta incorreto, (2) qual e a evidencia correta no documento, e (3) instrucao especifica do que fazer. Essa triade maximiza a probabilidade de Claude corrigir o erro na proxima tentativa.</p>
 
         <div class="bg-amber-500/10 rounded-xl border border-amber-500/30 p-6">
-          <h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">💡</span> Triade do Feedback Eficaz</h3>
+          <h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Triade do Feedback Eficaz</h3>
           <div class="space-y-3 text-neutral-300 text-sm">
             <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">1.</span><span><strong class="text-amber-400">O que esta errado:</strong> "O campo revenue retornou 0"</span></div>
             <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">2.</span><span><strong class="text-amber-400">Evidencia correta:</strong> "O documento mostra 'Total Revenue: $4.2M' na pagina 3"</span></div>
@@ -123,12 +123,12 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-6">
-            <h4 class="font-semibold text-red-400 mb-3">❌ Retry Generico</h4>
+            <h4 class="font-semibold text-red-400 mb-3">âŒ Retry Generico</h4>
             <p class="text-neutral-300 text-sm font-mono">"A saida estava incorreta. Tente novamente."</p>
-            <p class="text-neutral-400 text-xs mt-2">Claude nao sabe o que corrigir — provavelmente repete o mesmo erro.</p>
+            <p class="text-neutral-400 text-xs mt-2">Claude nao sabe o que corrigir â€” provavelmente repete o mesmo erro.</p>
           </div>
           <div class="bg-emerald-500/10 rounded-xl border border-emerald-500/30 p-6">
-            <h4 class="font-semibold text-emerald-400 mb-3">✅ Retry Especifico</h4>
+            <h4 class="font-semibold text-emerald-400 mb-3">âœ… Retry Especifico</h4>
             <p class="text-neutral-300 text-sm font-mono">"revenue era 0, mas pagina 3 mostra $4.2M. Re-extraia."</p>
             <p class="text-neutral-400 text-xs mt-2">Claude sabe exatamente o que corrigir e onde encontrar o dado.</p>
           </div>
@@ -140,7 +140,7 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
-        <h2 class="text-2xl font-bold">🚫 Retries Ineficazes: Info Ausente na Fonte</h2>
+        <h2 class="text-2xl font-bold">ðŸš« Retries Ineficazes: Info Ausente na Fonte</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">Ha uma situacao onde retries sao fundamentalmente ineficazes: quando a informacao solicitada nao existe no documento fonte. Se o documento nao menciona "numero de funcionarios", nenhuma quantidade de retries fara Claude encontrar esse dado. Pior: retries insistentes podem forcar Claude a alucinar um valor para satisfazer o pedido.</p>
@@ -148,27 +148,27 @@
         <p class="text-neutral-300 leading-relaxed">A habilidade critica e distinguir entre erros de extracao (o dado existe mas Claude nao o encontrou) e ausencia de dados (o dado simplesmente nao esta no documento). Para o primeiro, retry com feedback funciona. Para o segundo, o comportamento correto e aceitar null e seguir em frente.</p>
 
         <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-6">
-          <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">🚨</span> Risco de Retry Forcado</h3>
-          <p class="text-neutral-300 leading-relaxed">Insistir em retries quando o dado nao existe na fonte <strong class="text-red-400">incentiva alucinacao</strong>. Claude, pressionado a fornecer um valor, pode fabricar um numero plausivel. O resultado e pior que null — e um dado falso que parece real.</p>
+          <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">ðŸš¨</span> Risco de Retry Forcado</h3>
+          <p class="text-neutral-300 leading-relaxed">Insistir em retries quando o dado nao existe na fonte <strong class="text-red-400">incentiva alucinacao</strong>. Claude, pressionado a fornecer um valor, pode fabricar um numero plausivel. O resultado e pior que null â€” e um dado falso que parece real.</p>
         </div>
 
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-          <h3 class="text-lg font-semibold mb-4 flex items-center"><span class="mr-2">🔍</span> Diagnostico: Erro vs Ausencia</h3>
+          <h3 class="text-lg font-semibold mb-4 flex items-center"><span class="mr-2">ðŸ”</span> Diagnostico: Erro vs Ausencia</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="bg-dark-700 rounded-lg p-4">
               <h4 class="text-amber-400 font-semibold text-sm mb-2">Erro de Extracao (retry vale a pena)</h4>
               <ul class="text-neutral-300 text-xs space-y-1">
-                <li>• O dado existe no documento</li>
-                <li>• Claude retornou valor errado ou zero</li>
-                <li>• Feedback pode apontar localizacao</li>
+                <li>â€¢ O dado existe no documento</li>
+                <li>â€¢ Claude retornou valor errado ou zero</li>
+                <li>â€¢ Feedback pode apontar localizacao</li>
               </ul>
             </div>
             <div class="bg-dark-700 rounded-lg p-4">
               <h4 class="text-red-400 font-semibold text-sm mb-2">Ausencia de Dados (retry inutil)</h4>
               <ul class="text-neutral-300 text-xs space-y-1">
-                <li>• O dado NAO existe no documento</li>
-                <li>• Claude retornou null (correto!)</li>
-                <li>• Retry forcaria fabricacao</li>
+                <li>â€¢ O dado NAO existe no documento</li>
+                <li>â€¢ Claude retornou null (correto!)</li>
+                <li>â€¢ Retry forcaria fabricacao</li>
               </ul>
             </div>
           </div>
@@ -180,20 +180,20 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
-        <h2 class="text-2xl font-bold">🔍 Campo detected_pattern para Diagnostico</h2>
+        <h2 class="text-2xl font-bold">ðŸ” Campo detected_pattern para Diagnostico</h2>
       </div>
       <div class="space-y-6">
-        <p class="text-neutral-300 leading-relaxed">Incluir campos de diagnostico no schema — como "detected_pattern", "reasoning", "confidence", ou "source_location" — transforma saidas opacas em saidas depuraveis. Quando Claude retorna nao apenas o valor mas tambem o raciocinio que levou aquele valor, voce pode identificar erros sistematicos e ajustar o prompt de forma informada.</p>
+        <p class="text-neutral-300 leading-relaxed">Incluir campos de diagnostico no schema â€” como "detected_pattern", "reasoning", "confidence", ou "source_location" â€” transforma saidas opacas em saidas depuraveis. Quando Claude retorna nao apenas o valor mas tambem o raciocinio que levou aquele valor, voce pode identificar erros sistematicos e ajustar o prompt de forma informada.</p>
 
         <p class="text-neutral-300 leading-relaxed">Por exemplo, se o campo "detected_pattern" mostra que Claude esta confundindo "gross revenue" com "net revenue", voce sabe que precisa adicionar uma clarificacao no prompt ou um exemplo few-shot que diferencie os dois. Sem o campo de diagnostico, voce so veria o numero errado sem entender por que.</p>
 
         <div class="bg-amber-500/10 rounded-xl border border-amber-500/30 p-6">
-          <h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">💡</span> Campos de Diagnostico Recomendados</h3>
+          <h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Campos de Diagnostico Recomendados</h3>
           <div class="space-y-2 text-neutral-300 text-sm">
-            <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">•</span><span><strong class="text-amber-400">reasoning:</strong> Explicacao do raciocinio que levou ao valor extraido</span></div>
-            <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">•</span><span><strong class="text-amber-400">confidence:</strong> Score de 0 a 1 indicando certeza do modelo</span></div>
-            <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">•</span><span><strong class="text-amber-400">source_location:</strong> Onde no documento o dado foi encontrado</span></div>
-            <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">•</span><span><strong class="text-amber-400">detected_pattern:</strong> Padrao identificado que levou a decisao</span></div>
+            <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">â€¢</span><span><strong class="text-amber-400">reasoning:</strong> Explicacao do raciocinio que levou ao valor extraido</span></div>
+            <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">â€¢</span><span><strong class="text-amber-400">confidence:</strong> Score de 0 a 1 indicando certeza do modelo</span></div>
+            <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">â€¢</span><span><strong class="text-amber-400">source_location:</strong> Onde no documento o dado foi encontrado</span></div>
+            <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">â€¢</span><span><strong class="text-amber-400">detected_pattern:</strong> Padrao identificado que levou a decisao</span></div>
           </div>
         </div>
       </div>
@@ -203,15 +203,15 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
-        <h2 class="text-2xl font-bold">📋 Feedback Especifico na Pratica</h2>
+        <h2 class="text-2xl font-bold">ðŸ“‹ Feedback Especifico na Pratica</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">O padrao ouro de feedback de retry e a triade: valor retornado + evidencia correta + instrucao especifica. Na pratica, isso significa que seu codigo de validacao precisa nao apenas detectar que um valor esta errado, mas tambem localizar a evidencia correta no documento fonte para incluir no feedback.</p>
 
-        <p class="text-neutral-300 leading-relaxed">Para dados numericos, validacoes programaticas podem detectar zeros suspeitos, valores negativos inesperados, ou valores fora de ranges plausíveis. Para dados textuais, regras de negocio podem verificar formatos esperados. O importante e que cada falha de validacao gere um feedback acionavel, nao apenas "falhou".</p>
+        <p class="text-neutral-300 leading-relaxed">Para dados numericos, validacoes programaticas podem detectar zeros suspeitos, valores negativos inesperados, ou valores fora de ranges plausÃ­veis. Para dados textuais, regras de negocio podem verificar formatos esperados. O importante e que cada falha de validacao gere um feedback acionavel, nao apenas "falhou".</p>
 
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-          <h3 class="text-lg font-semibold mb-4 flex items-center"><span class="mr-2">📝</span> Exemplos de Feedback Acionavel</h3>
+          <h3 class="text-lg font-semibold mb-4 flex items-center"><span class="mr-2">ðŸ“</span> Exemplos de Feedback Acionavel</h3>
           <div class="space-y-3">
             <div class="bg-dark-700 rounded-lg p-4">
               <p class="text-amber-400 text-xs font-semibold mb-1">Validacao: revenue == 0 em documento que menciona receita</p>
@@ -230,15 +230,15 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
-        <h2 class="text-2xl font-bold">🛑 Saber Quando Parar de Fazer Retry</h2>
+        <h2 class="text-2xl font-bold">ðŸ›‘ Saber Quando Parar de Fazer Retry</h2>
       </div>
       <div class="space-y-6">
-        <p class="text-neutral-300 leading-relaxed">Definir limites de retry e criterios de abandono e tao importante quanto implementar o retry. A recomendacao pratica e: maximo de 2-3 tentativas com feedback especifico. Se apos 3 tentativas o erro persiste, o problema provavelmente nao e resolvivel por retry — pode ser ambiguidade no documento, limitacao do modelo, ou dado genuinamente ausente.</p>
+        <p class="text-neutral-300 leading-relaxed">Definir limites de retry e criterios de abandono e tao importante quanto implementar o retry. A recomendacao pratica e: maximo de 2-3 tentativas com feedback especifico. Se apos 3 tentativas o erro persiste, o problema provavelmente nao e resolvivel por retry â€” pode ser ambiguidade no documento, limitacao do modelo, ou dado genuinamente ausente.</p>
 
         <p class="text-neutral-300 leading-relaxed">Quando o limite de retry e atingido, as opcoes sao: marcar o campo como "uncertain" e seguir em frente, escalar para revisao humana, ou registrar o caso para analise posterior e ajuste do prompt. O pior cenario e um loop infinito de retries que consome tokens sem convergir.</p>
 
         <div class="bg-amber-500/10 rounded-xl border border-amber-500/30 p-6">
-          <h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">💡</span> Regra dos 3 Retries</h3>
+          <h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Regra dos 3 Retries</h3>
           <div class="space-y-4">
             <div class="flex items-start space-x-4">
               <div class="flex flex-col items-center">
@@ -269,13 +269,13 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
-        <h2 class="text-2xl font-bold">🏗️ Pipeline de Validacao Completo</h2>
+        <h2 class="text-2xl font-bold">ðŸ—ï¸ Pipeline de Validacao Completo</h2>
       </div>
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">Um pipeline de validacao de producao combina todas as tecnicas: extracao com tool_use forcado, validacao programatica multi-camada (tipos, ranges, regras de negocio), retry com feedback especifico para cada tipo de erro, limite de tentativas com fallback, e monitoramento de metricas de qualidade.</p>
 
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-          <h3 class="text-lg font-semibold mb-6 flex items-center"><span class="mr-2">📍</span> Etapas do Pipeline</h3>
+          <h3 class="text-lg font-semibold mb-6 flex items-center"><span class="mr-2">ðŸ“</span> Etapas do Pipeline</h3>
           <div class="space-y-6">
             <div class="flex items-start space-x-4">
               <div class="flex flex-col items-center"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold text-sm border border-amber-500/30">1</span><div class="w-0.5 h-8 bg-amber-500/30 mt-2"></div></div>
@@ -301,29 +301,29 @@
     <!-- RESUMO -->
     <section>
       <h2 class="text-2xl font-bold mb-6 flex items-center space-x-3">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400">✓</span>
+        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400">âœ“</span>
         <span>Resumo do Modulo</span>
       </h2>
       <div class="space-y-3 mb-8">
-        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">✓</span><span class="text-neutral-300">Retry eficaz requer feedback especifico: valor errado + evidencia + instrucao</span></div>
-        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">✓</span><span class="text-neutral-300">Retries sao inuteis quando o dado nao existe na fonte — podem forcar alucinacao</span></div>
-        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">✓</span><span class="text-neutral-300">Campos de diagnostico (reasoning, confidence) transformam saidas opacas em depuraveis</span></div>
-        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">✓</span><span class="text-neutral-300">A triade valor-evidencia-instrucao maximiza a taxa de correcao</span></div>
-        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">✓</span><span class="text-neutral-300">Limite de 2-3 retries com fallback para revisao humana ou marcacao de incerteza</span></div>
-        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">✓</span><span class="text-neutral-300">Pipeline completo: extracao → validacao → retry → fallback com monitoramento</span></div>
+        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Retry eficaz requer feedback especifico: valor errado + evidencia + instrucao</span></div>
+        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Retries sao inuteis quando o dado nao existe na fonte â€” podem forcar alucinacao</span></div>
+        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Campos de diagnostico (reasoning, confidence) transformam saidas opacas em depuraveis</span></div>
+        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">A triade valor-evidencia-instrucao maximiza a taxa de correcao</span></div>
+        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Limite de 2-3 retries com fallback para revisao humana ou marcacao de incerteza</span></div>
+        <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold text-lg">âœ“</span><span class="text-neutral-300">Pipeline completo: extracao â†’ validacao â†’ retry â†’ fallback com monitoramento</span></div>
       </div>
       <div class="bg-amber-500/10 rounded-lg border border-amber-500/30 p-4 mb-6">
-        <p class="text-neutral-300 text-sm"><strong class="text-amber-400">Proximo modulo:</strong> 4.5 — Processamento em Lote (Batch API)</p>
+        <p class="text-neutral-300 text-sm"><strong class="text-amber-400">Proximo modulo:</strong> 4.5 â€” Processamento em Lote (Batch API)</p>
       </div>
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-4-3.html" class="flex-1 text-center px-6 py-3 rounded-lg border border-dark-600 text-neutral-300 hover:text-amber-400 hover:border-amber-500/30 transition-colors font-medium">← Modulo Anterior</a>
-        <a href="modulo-4-5.html" class="flex-1 text-center px-6 py-3 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/10 transition-colors font-medium">Proximo Modulo →</a>
+        <a href="modulo-4-3.html" class="flex-1 text-center px-6 py-3 rounded-lg border border-dark-600 text-neutral-300 hover:text-amber-400 hover:border-amber-500/30 transition-colors font-medium">â† Modulo Anterior</a>
+        <a href="modulo-4-5.html" class="flex-1 text-center px-6 py-3 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/10 transition-colors font-medium">Proximo Modulo â†’</a>
       </div>
     </section>
   </main>
 
   <footer class="border-t border-dark-600 py-8 mt-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>CCA-Q1 — Claude Certified Architect - 2026</p></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>CCA-Q1 â€” Claude Certified Architect - 2026</p></div>
   </footer>
 
   <script>

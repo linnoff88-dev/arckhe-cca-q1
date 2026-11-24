@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 2.4 — Servidores MCP no Claude Code | CCA-Q1</title>
+  <title>Modulo 2.4 â€” Servidores MCP no Claude Code | CCA-Q1</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -86,11 +86,11 @@
       <div class="flex justify-between items-center h-14">
         <div class="flex items-center space-x-4">
           <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
-            <span class="text-2xl">🏗️</span>
+            <span class="text-2xl">ðŸ—ï¸</span>
             <span class="font-bold text-lg hidden sm:inline">CCA-Q1</span>
           </a>
           <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+          <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
         </div>
         <div class="flex items-center space-x-1 sm:space-x-2">
           <a href="../trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors">
@@ -141,7 +141,7 @@
   <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="inline-block px-4 py-1.5 bg-blue-500/20 text-blue-400 text-sm font-semibold rounded-full mb-4">MODULO 2.4</span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🌐 Servidores MCP no Claude Code</h1>
+      <h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸŒ Servidores MCP no Claude Code</h1>
       <p class="text-neutral-300 text-lg max-w-3xl mb-8">Configure e gerencie servidores MCP para estender Claude Code com ferramentas externas. Entenda configuracao por projeto vs usuario, variaveis de ambiente e resources.</p>
 
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
@@ -172,18 +172,18 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
-        <h2 class="text-2xl font-bold">📁 .mcp.json (Nivel Projeto)</h2>
+        <h2 class="text-2xl font-bold">ðŸ“ .mcp.json (Nivel Projeto)</h2>
       </div>
 
       <div class="space-y-6">
         <p class="text-neutral-300 leading-relaxed">O arquivo <code class="bg-dark-700 px-2 py-0.5 rounded text-blue-400 text-sm">.mcp.json</code> na raiz do projeto define servidores MCP especificos para aquele repositorio. Quando Claude Code abre o projeto, ele detecta e carrega automaticamente esses servidores, disponibilizando suas ferramentas. Como esta na raiz do projeto, e versionado no Git e compartilhado com toda a equipe.</p>
 
-        <p class="text-neutral-300 leading-relaxed">Este e o padrao recomendado para ferramentas especificas do codebase — acesso a banco de dados do projeto, APIs internas, ferramentas de build, integracoes com o CI/CD do repositorio. Qualquer pessoa que clone o repositorio tera automaticamente as mesmas ferramentas MCP disponiveis.</p>
+        <p class="text-neutral-300 leading-relaxed">Este e o padrao recomendado para ferramentas especificas do codebase â€” acesso a banco de dados do projeto, APIs internas, ferramentas de build, integracoes com o CI/CD do repositorio. Qualquer pessoa que clone o repositorio tera automaticamente as mesmas ferramentas MCP disponiveis.</p>
 
         <!-- Box Conceito Principal -->
         <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6">
           <h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center">
-            <span class="mr-2">💡</span> Conceito Principal
+            <span class="mr-2">ðŸ’¡</span> Conceito Principal
           </h3>
           <p class="text-neutral-300 leading-relaxed"><strong class="text-blue-400">.mcp.json</strong> na raiz do projeto = ferramentas especificas do projeto, versionadas no Git, compartilhadas com a equipe. Carregamento automatico quando Claude Code abre o projeto. Ideal para integracao com banco de dados, APIs e ferramentas de build do repositorio.</p>
         </div>
@@ -191,7 +191,7 @@
         <!-- Box Dica Pratica -->
         <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
           <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
-            <span class="mr-2">⚡</span> Dica Pratica
+            <span class="mr-2">âš¡</span> Dica Pratica
           </h3>
           <p class="text-neutral-300 leading-relaxed">Nunca coloque credenciais diretamente no .mcp.json. Use variaveis de ambiente (${TOKEN}) para secrets e documente no README quais variaveis precisam ser configuradas. O arquivo .mcp.json vai para o Git; credenciais nunca devem ir.</p>
         </div>
@@ -202,11 +202,11 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
-        <h2 class="text-2xl font-bold">🏠 ~/.claude.json (Nivel Usuario)</h2>
+        <h2 class="text-2xl font-bold">ðŸ  ~/.claude.json (Nivel Usuario)</h2>
       </div>
 
       <div class="space-y-6">
-        <p class="text-neutral-300 leading-relaxed">O arquivo <code class="bg-dark-700 px-2 py-0.5 rounded text-blue-400 text-sm">~/.claude.json</code> no diretorio home do usuario define servidores MCP pessoais, disponiveis em todos os projetos. E ideal para ferramentas que voce usa independentemente do projeto — integracao com Slack, email, calendario, ferramentas de produtividade pessoal.</p>
+        <p class="text-neutral-300 leading-relaxed">O arquivo <code class="bg-dark-700 px-2 py-0.5 rounded text-blue-400 text-sm">~/.claude.json</code> no diretorio home do usuario define servidores MCP pessoais, disponiveis em todos os projetos. E ideal para ferramentas que voce usa independentemente do projeto â€” integracao com Slack, email, calendario, ferramentas de produtividade pessoal.</p>
 
         <p class="text-neutral-300 leading-relaxed">Este arquivo NAO e versionado (esta no home do usuario, nao no repositorio). Cada membro da equipe pode ter suas proprias ferramentas pessoais sem afetar o projeto compartilhado. E a separacao correta entre configuracao pessoal e configuracao de projeto.</p>
 
@@ -214,46 +214,46 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="bg-blue-500/10 rounded-xl border border-blue-500/30 p-6">
             <h4 class="font-semibold text-blue-400 mb-4 flex items-center">
-              <span class="mr-2">✅</span> ~/.claude.json (Usuario)
+              <span class="mr-2">âœ…</span> ~/.claude.json (Usuario)
             </h4>
             <ul class="space-y-3 text-neutral-300 text-sm">
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Integracao pessoal com Slack, email, calendario</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Ferramentas de produtividade pessoal</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Disponivel em todos os projetos</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>NAO versionado no Git</span>
               </li>
             </ul>
           </div>
           <div class="bg-blue-500/10 rounded-xl border border-blue-500/30 p-6">
             <h4 class="font-semibold text-blue-400 mb-4 flex items-center">
-              <span class="mr-2">📁</span> .mcp.json (Projeto)
+              <span class="mr-2">ðŸ“</span> .mcp.json (Projeto)
             </h4>
             <ul class="space-y-3 text-neutral-300 text-sm">
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Banco de dados, APIs internas do projeto</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Ferramentas de build e deploy</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Compartilhado com toda a equipe</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Versionado no Git</span>
               </li>
             </ul>
@@ -266,18 +266,18 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
-        <h2 class="text-2xl font-bold">🔑 Variaveis de Ambiente</h2>
+        <h2 class="text-2xl font-bold">ðŸ”‘ Variaveis de Ambiente</h2>
       </div>
 
       <div class="space-y-6">
-        <p class="text-neutral-300 leading-relaxed">Servidores MCP frequentemente precisam de credenciais — tokens de API, senhas de banco de dados, chaves de acesso. A forma correta de fornecer essas credenciais e via variaveis de ambiente, referenciadas no .mcp.json com a sintaxe <code class="bg-dark-700 px-2 py-0.5 rounded text-blue-400 text-sm">${NOME_VAR}</code>.</p>
+        <p class="text-neutral-300 leading-relaxed">Servidores MCP frequentemente precisam de credenciais â€” tokens de API, senhas de banco de dados, chaves de acesso. A forma correta de fornecer essas credenciais e via variaveis de ambiente, referenciadas no .mcp.json com a sintaxe <code class="bg-dark-700 px-2 py-0.5 rounded text-blue-400 text-sm">${NOME_VAR}</code>.</p>
 
-        <p class="text-neutral-300 leading-relaxed">Por exemplo, um servidor MCP para GitHub pode referenciar <code class="bg-dark-700 px-2 py-0.5 rounded text-blue-400 text-sm">${GITHUB_TOKEN}</code> no .mcp.json. O token real vem do ambiente de execucao — pode estar em um .env local, nas variaveis do CI/CD, ou no secret manager. A chave nunca aparece no repositorio.</p>
+        <p class="text-neutral-300 leading-relaxed">Por exemplo, um servidor MCP para GitHub pode referenciar <code class="bg-dark-700 px-2 py-0.5 rounded text-blue-400 text-sm">${GITHUB_TOKEN}</code> no .mcp.json. O token real vem do ambiente de execucao â€” pode estar em um .env local, nas variaveis do CI/CD, ou no secret manager. A chave nunca aparece no repositorio.</p>
 
         <!-- Box Alerta -->
         <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-6">
           <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
-            <span class="mr-2">⚠️</span> Alerta
+            <span class="mr-2">âš ï¸</span> Alerta
           </h3>
           <p class="text-neutral-300 leading-relaxed">Hardcodar tokens ou senhas no .mcp.json e um <strong class="text-red-400">anti-padrao critico de seguranca</strong>. O arquivo e versionado no Git e visivel para toda a equipe. Sempre use <code class="bg-dark-700 px-2 py-0.5 rounded text-red-400 text-sm">${VAR_NAME}</code> para credenciais e documente quais variaveis precisam ser configuradas.</p>
         </div>
@@ -285,23 +285,23 @@
         <!-- Box Dados/Pesquisa -->
         <div class="bg-blue-500/10 rounded-xl border border-blue-500/30 p-6">
           <h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center">
-            <span class="mr-2">📊</span> Fluxo de Credenciais
+            <span class="mr-2">ðŸ“Š</span> Fluxo de Credenciais
           </h3>
           <ul class="space-y-2 text-neutral-300 text-sm">
             <li class="flex items-start space-x-2">
-              <span class="text-blue-400 mt-0.5">•</span>
-              <span><strong>.mcp.json:</strong> referencia ${GITHUB_TOKEN} — vai para o Git.</span>
+              <span class="text-blue-400 mt-0.5">â€¢</span>
+              <span><strong>.mcp.json:</strong> referencia ${GITHUB_TOKEN} â€” vai para o Git.</span>
             </li>
             <li class="flex items-start space-x-2">
-              <span class="text-blue-400 mt-0.5">•</span>
-              <span><strong>.env local:</strong> GITHUB_TOKEN=ghp_abc123 — NAO vai para o Git (.gitignore).</span>
+              <span class="text-blue-400 mt-0.5">â€¢</span>
+              <span><strong>.env local:</strong> GITHUB_TOKEN=ghp_abc123 â€” NAO vai para o Git (.gitignore).</span>
             </li>
             <li class="flex items-start space-x-2">
-              <span class="text-blue-400 mt-0.5">•</span>
+              <span class="text-blue-400 mt-0.5">â€¢</span>
               <span><strong>CI/CD:</strong> variavel configurada no secret manager da plataforma.</span>
             </li>
             <li class="flex items-start space-x-2">
-              <span class="text-blue-400 mt-0.5">•</span>
+              <span class="text-blue-400 mt-0.5">â€¢</span>
               <span><strong>Runtime:</strong> expansao automatica de ${GITHUB_TOKEN} para o valor real.</span>
             </li>
           </ul>
@@ -313,18 +313,18 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
-        <h2 class="text-2xl font-bold">📚 MCP Resources</h2>
+        <h2 class="text-2xl font-bold">ðŸ“š MCP Resources</h2>
       </div>
 
       <div class="space-y-6">
-        <p class="text-neutral-300 leading-relaxed">Alem de ferramentas (tools), servidores MCP podem expor resources — catalogos de conteudo estatico ou semi-estatico. Resources incluem documentacao de API, schemas de banco de dados, guias de estilo, dados de referencia. Diferente de ferramentas, resources sao carregados automaticamente no contexto do modelo sem necessidade de chamada explicita.</p>
+        <p class="text-neutral-300 leading-relaxed">Alem de ferramentas (tools), servidores MCP podem expor resources â€” catalogos de conteudo estatico ou semi-estatico. Resources incluem documentacao de API, schemas de banco de dados, guias de estilo, dados de referencia. Diferente de ferramentas, resources sao carregados automaticamente no contexto do modelo sem necessidade de chamada explicita.</p>
 
         <p class="text-neutral-300 leading-relaxed">A decisao entre expor algo como tool ou resource depende de se o conteudo e dinamico ou estatico. Se precisa de parametros e retorna dados diferentes a cada chamada (busca, consulta), e uma tool. Se e conteudo fixo que o modelo precisa ter disponivel (documentacao, schema), e um resource.</p>
 
         <!-- Box Conceito Principal -->
         <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6">
           <h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center">
-            <span class="mr-2">💡</span> Conceito Principal
+            <span class="mr-2">ðŸ’¡</span> Conceito Principal
           </h3>
           <p class="text-neutral-300 leading-relaxed"><strong class="text-blue-400">Tools</strong> = conteudo dinamico, requer parametros, executado sob demanda. <strong class="text-blue-400">Resources</strong> = conteudo estatico/semi-estatico, carregado automaticamente no contexto, sem chamada explicita. Use resources para documentacao, schemas e dados de referencia; tools para buscas, consultas e acoes.</p>
         </div>
@@ -332,7 +332,7 @@
         <!-- Box Dica Pratica -->
         <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
           <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
-            <span class="mr-2">⚡</span> Dica Pratica
+            <span class="mr-2">âš¡</span> Dica Pratica
           </h3>
           <p class="text-neutral-300 leading-relaxed">Exponha a documentacao da API do projeto como MCP resource. Isso permite que Claude Code tenha acesso automatico aos schemas e endpoints disponveis sem precisar buscar a documentacao manualmente a cada sessao.</p>
         </div>
@@ -343,34 +343,34 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
-        <h2 class="text-2xl font-bold">🌍 Servidores da Comunidade</h2>
+        <h2 class="text-2xl font-bold">ðŸŒ Servidores da Comunidade</h2>
       </div>
 
       <div class="space-y-6">
-        <p class="text-neutral-300 leading-relaxed">O ecossistema MCP inclui um catalogo crescente de servidores mantidos pela comunidade para integracoes comuns — GitHub, Slack, PostgreSQL, MongoDB, APIs REST genericas e muitos outros. Esses servidores sao testados, documentados e prontos para uso, eliminando a necessidade de implementar integracoes do zero.</p>
+        <p class="text-neutral-300 leading-relaxed">O ecossistema MCP inclui um catalogo crescente de servidores mantidos pela comunidade para integracoes comuns â€” GitHub, Slack, PostgreSQL, MongoDB, APIs REST genericas e muitos outros. Esses servidores sao testados, documentados e prontos para uso, eliminando a necessidade de implementar integracoes do zero.</p>
 
         <p class="text-neutral-300 leading-relaxed">O principio e claro: para integracoes padrao, use servidores da comunidade. Eles ja resolveram edge cases, tratam erros corretamente e sao mantidos por multiplos contribuidores. Criar um servidor customizado para GitHub quando existe um comunitario robusto e desperdicar tempo e adicionar risco desnecessario.</p>
 
         <!-- Box Dados/Pesquisa -->
         <div class="bg-blue-500/10 rounded-xl border border-blue-500/30 p-6">
           <h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center">
-            <span class="mr-2">📊</span> Ecossistema de Servidores
+            <span class="mr-2">ðŸ“Š</span> Ecossistema de Servidores
           </h3>
           <ul class="space-y-2 text-neutral-300 text-sm">
             <li class="flex items-start space-x-2">
-              <span class="text-blue-400 mt-0.5">•</span>
+              <span class="text-blue-400 mt-0.5">â€¢</span>
               <span><strong>GitHub:</strong> issues, PRs, repositorios, code search.</span>
             </li>
             <li class="flex items-start space-x-2">
-              <span class="text-blue-400 mt-0.5">•</span>
+              <span class="text-blue-400 mt-0.5">â€¢</span>
               <span><strong>Bancos de dados:</strong> PostgreSQL, MySQL, MongoDB, SQLite.</span>
             </li>
             <li class="flex items-start space-x-2">
-              <span class="text-blue-400 mt-0.5">•</span>
+              <span class="text-blue-400 mt-0.5">â€¢</span>
               <span><strong>Comunicacao:</strong> Slack, email, notificacoes.</span>
             </li>
             <li class="flex items-start space-x-2">
-              <span class="text-blue-400 mt-0.5">•</span>
+              <span class="text-blue-400 mt-0.5">â€¢</span>
               <span><strong>Infraestrutura:</strong> Docker, Kubernetes, AWS, GCP.</span>
             </li>
           </ul>
@@ -382,11 +382,11 @@
     <section>
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
-        <h2 class="text-2xl font-bold">🔧 Customizado vs Padrao</h2>
+        <h2 class="text-2xl font-bold">ðŸ”§ Customizado vs Padrao</h2>
       </div>
 
       <div class="space-y-6">
-        <p class="text-neutral-300 leading-relaxed">Servidores MCP customizados so devem ser criados quando nenhum servidor comunitario atende a necessidade. Tipicamente, isso acontece para APIs internas da empresa, workflows unicos do projeto, ou integracao com sistemas proprietarios. Para tudo que e padrao — GitHub, bancos de dados, Slack — use servidores comunitarios.</p>
+        <p class="text-neutral-300 leading-relaxed">Servidores MCP customizados so devem ser criados quando nenhum servidor comunitario atende a necessidade. Tipicamente, isso acontece para APIs internas da empresa, workflows unicos do projeto, ou integracao com sistemas proprietarios. Para tudo que e padrao â€” GitHub, bancos de dados, Slack â€” use servidores comunitarios.</p>
 
         <p class="text-neutral-300 leading-relaxed">Criar servidores customizados desnecessariamente adiciona custo de manutencao, risco de bugs e complexidade operacional. Cada servidor customizado precisa ser mantido, testado e documentado pela equipe. Servidores comunitarios ja tem isso resolvido por multiplos contribuidores.</p>
 
@@ -394,46 +394,46 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="bg-blue-500/10 rounded-xl border border-blue-500/30 p-6">
             <h4 class="font-semibold text-blue-400 mb-4 flex items-center">
-              <span class="mr-2">✅</span> Quando Customizar
+              <span class="mr-2">âœ…</span> Quando Customizar
             </h4>
             <ul class="space-y-3 text-neutral-300 text-sm">
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>API interna da empresa sem equivalente publico</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Workflow unico que combina multiplas fontes</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Sistema proprietario sem integracao padrao</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-blue-400 mt-0.5">•</span>
+                <span class="text-blue-400 mt-0.5">â€¢</span>
                 <span>Necessidade de logica de negocios especifica</span>
               </li>
             </ul>
           </div>
           <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-6">
             <h4 class="font-semibold text-red-400 mb-4 flex items-center">
-              <span class="mr-2">❌</span> Quando NAO Customizar
+              <span class="mr-2">âŒ</span> Quando NAO Customizar
             </h4>
             <ul class="space-y-3 text-neutral-300 text-sm">
               <li class="flex items-start space-x-2">
-                <span class="text-red-400 mt-0.5">•</span>
+                <span class="text-red-400 mt-0.5">â€¢</span>
                 <span>Integracao com GitHub, Slack, DBs populares</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-red-400 mt-0.5">•</span>
+                <span class="text-red-400 mt-0.5">â€¢</span>
                 <span>"Quero mais controle" sem necessidade real</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-red-400 mt-0.5">•</span>
+                <span class="text-red-400 mt-0.5">â€¢</span>
                 <span>Para aprender/praticar (use em projetos pessoais)</span>
               </li>
               <li class="flex items-start space-x-2">
-                <span class="text-red-400 mt-0.5">•</span>
+                <span class="text-red-400 mt-0.5">â€¢</span>
                 <span>Quando existe servidor comunitario funcional</span>
               </li>
             </ul>
@@ -448,39 +448,39 @@
 
       <div class="space-y-4 mb-8">
         <div class="flex items-start space-x-3">
-          <span class="text-blue-400 font-bold text-lg">✓</span>
+          <span class="text-blue-400 font-bold text-lg">âœ“</span>
           <span class="text-neutral-300">.mcp.json = nivel projeto (versionado, compartilhado); ~/.claude.json = nivel usuario (pessoal, nao versionado)</span>
         </div>
         <div class="flex items-start space-x-3">
-          <span class="text-blue-400 font-bold text-lg">✓</span>
-          <span class="text-neutral-300">Credenciais via variaveis de ambiente (${TOKEN}) — nunca hardcodar no .mcp.json</span>
+          <span class="text-blue-400 font-bold text-lg">âœ“</span>
+          <span class="text-neutral-300">Credenciais via variaveis de ambiente (${TOKEN}) â€” nunca hardcodar no .mcp.json</span>
         </div>
         <div class="flex items-start space-x-3">
-          <span class="text-blue-400 font-bold text-lg">✓</span>
+          <span class="text-blue-400 font-bold text-lg">âœ“</span>
           <span class="text-neutral-300">Resources para conteudo estatico, Tools para conteudo dinamico</span>
         </div>
         <div class="flex items-start space-x-3">
-          <span class="text-blue-400 font-bold text-lg">✓</span>
+          <span class="text-blue-400 font-bold text-lg">âœ“</span>
           <span class="text-neutral-300">Servidores comunitarios para integracoes padrao, customizado apenas para necessidades unicas</span>
         </div>
         <div class="flex items-start space-x-3">
-          <span class="text-blue-400 font-bold text-lg">✓</span>
+          <span class="text-blue-400 font-bold text-lg">âœ“</span>
           <span class="text-neutral-300">Criar servidores customizados desnecessariamente adiciona custo e risco sem beneficio</span>
         </div>
       </div>
 
       <div class="bg-blue-500/10 rounded-lg border border-blue-500/30 p-4 mb-6">
         <p class="text-neutral-300 text-sm">
-          <strong class="text-blue-400">Proximo modulo:</strong> 2.5 — Ferramentas Built-in
+          <strong class="text-blue-400">Proximo modulo:</strong> 2.5 â€” Ferramentas Built-in
         </p>
       </div>
 
       <div class="flex flex-col sm:flex-row gap-4">
         <a href="index.html" class="flex-1 text-center px-6 py-3 rounded-lg border border-dark-600 text-neutral-300 hover:text-blue-400 hover:border-blue-500/30 transition-colors font-medium">
-          ← Voltar para Trilha
+          â† Voltar para Trilha
         </a>
         <a href="modulo-2-5.html" class="flex-1 text-center px-6 py-3 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/10 transition-colors font-medium">
-          Proximo Modulo →
+          Proximo Modulo â†’
         </a>
       </div>
     </section>
@@ -489,7 +489,7 @@
 
   <footer class="border-t border-dark-600 py-8 mt-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-      <p>CCA-Q1 — Claude Certified Architect - 2026</p>
+      <p>CCA-Q1 â€” Claude Certified Architect - 2026</p>
     </div>
   </footer>
 
